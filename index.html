@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Der kleine Baum, der wachsen durfte – Ein christliches Trostbuch</title>
+  <style>
+    :root {
+      --bg-cream: #faf7f2;
+      --card-bg: #ffffff;
+      --text-main: #2d3748;
+      --text-muted: #5a6a7e;
+      --accent-green: #2c6e49;
+      --accent-gold: #b87d28;
+      --accent-water: #3b82f6;
+      --soft-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      --border-radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Georgia', 'Palatino', serif;
+      line-height: 1.8;
+      font-size: 1.25rem;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--soft-shadow);
+      padding: 60px 48px;
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      border-bottom: 2px solid #f0eae1;
+      padding-bottom: 35px;
+    }
+
+    .title-badge {
+      display: inline-block;
+      background-color: #eaf4ed;
+      color: var(--accent-green);
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: var(--accent-green);
+      margin-bottom: 12px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      color: var(--accent-gold);
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+
+    .target-age {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    .bible-quotes {
+      background-color: #f6f3eb;
+      border-left: 5px solid var(--accent-gold);
+      padding: 22px 28px;
+      margin: 30px 0 45px 0;
+      border-radius: 0 12px 12px 0;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #4a453e;
+    }
+
+    .bible-quotes span {
+      display: block;
+      margin-top: 8px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.95rem;
+      color: var(--accent-gold);
+    }
+
+    .dedication {
+      background-color: #fdfbf7;
+      border: 1px dashed #dcd3c5;
+      padding: 22px 26px;
+      margin: 20px 0 50px 0;
+      font-style: italic;
+      border-radius: 12px;
+      color: #555;
+      text-align: center;
+    }
+
+    .chapter {
+      margin-bottom: 65px;
+      padding-bottom: 40px;
+      border-bottom: 1px dashed #e2d9cd;
+    }
+
+    .chapter:last-of-type {
+      border-bottom: none;
+    }
+
+    .chapter-number {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: var(--accent-water);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--text-main);
+      margin-bottom: 22px;
+      line-height: 1.3;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .highlight-quote {
+      font-size: 1.35rem;
+      background: #eff7f3;
+      border-left: 5px solid var(--accent-green);
+      padding: 24px 28px;
+      margin: 30px 0;
+      border-radius: 0 14px 14px 0;
+      color: #1a4d33;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .illustration-card {
+      background: #fbfbfd;
+      border: 1px dashed #cbd5e1;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 30px 0;
+      font-size: 0.95rem;
+      color: #64748b;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .illustration-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .illustration-content strong {
+      display: block;
+      color: #475569;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    .prayer-box {
+      background: #fffcf4;
+      border: 2px solid #ecd599;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 45px 0;
+    }
+
+    .prayer-box h3 {
+      color: var(--accent-gold);
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+    }
+
+    .prayer-text {
+      font-style: italic;
+      line-height: 1.9;
+      color: #4a3e2a;
+    }
+
+    .ritual-box {
+      background: #f0f7f4;
+      border: 2px solid #b7dfca;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 40px;
+    }
+
+    .ritual-box h3 {
+      color: var(--accent-green);
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .step-list {
+      list-style: none;
+      counter-reset: ritual-step;
+    }
+
+    .step-list li {
+      position: relative;
+      padding-left: 45px;
+      margin-bottom: 20px;
+    }
+
+    .step-list li::before {
+      counter-increment: ritual-step;
+      content: counter(ritual-step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      background: var(--accent-green);
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .bible-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    .bible-table th, .bible-table td {
+      border: 1px solid #e0d8cc;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .bible-table th {
+      background-color: #f7f1e7;
+      color: var(--accent-gold);
+    }
+
+    .parents-section {
+      background: #faf8f5;
+      border: 1px solid #ebd9c8;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 40px;
+    }
+
+    .parents-section h3 {
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .chapter {
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="title-badge">Christliches Kinder- & Trostbuch</div>
+      <h1>Der kleine Baum, der wachsen durfte</h1>
+      <div class="subtitle">Über Gnade, Vertrauen und das Loslassen von Leistungsdruck</div>
+      <div class="target-age">Für Kinder von 4 bis 9 Jahren</div>
+    </header>
+
+    <div class="bible-quotes">
+      <p>„Noch ehe ich dich im Mutterleib bildete, habe ich dich gekannt; und ehe du geboren wurdest, habe ich dich geheiligt.“</p>
+      <span>— Jeremia 1,5</span>
+      <br>
+      <p>„Gesegnet ist, wer auf den Herrn vertraut. Er ist wie ein Baum, am Wasser gepflanzt, der seine Wurzeln zum Bach hin streckt. Er fürchtet sich nicht, wenn die Hitze kommt; seine Blätter bleiben grün.“</p>
+      <span>— Jeremia 17,7–8 / Psalm 1,3</span>
+    </div>
+
+    <div class="dedication">
+      <p>„Für dich.<br>
+      Du musst die Welt heute nicht tragen.<br>
+      Gott hat dich schon gekannt und geliebt, als du noch winzig klein warst.<br>
+      Du musst dir Seine Liebe nicht verdienen.<br>
+      Atme ein. Atme aus. Du bist in Seinen guten Händen geborgen.“</p>
+    </div>
+
+    <!-- KAPITEL 1 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 1</span>
+      <h2>Am Ufer des Lebenswassers</h2>
+      <p>Es war einmal ein sonniger Hügel, an dessen Fuße ein kleiner, glasklarer Bach entlangmurmelte. Direkt an seinem Ufer, wo das Moos weich wie Samt war und der Duft von frischer Erde in der Luft lag, stand Bo.</p>
+      <p>Bo war ein junges Bäumchen. Seine Rinde war noch glatt und zartbraun, und seine Zweige reckten sich neugierig in den Himmel wie kleine Hände beim Gebet. An seinen Spitzen sprossen helle Blätter – rund, fein geädert und glänzend im Sonnenlicht.</p>
+      <p>Bo stand nicht zufällig an diesem Ufer. Der Gärtner selbst hatte ihn hierher gebracht. Der Gärtner hatte den Hügel angelegt, die Blumen gesät und den Bach zum Fließen gebracht. Er besuchte Bo jeden Tag, strich sanft über seine Rinde und sah ihn mit Augen an, in denen die ganze Liebe des Himmels lag.</p>
+      <p>Doch mit der Zeit schaute Bo immer seltener auf den Gärtner – und immer öfter auf die anderen Bäume.</p>
+      <p>Auf der anderen Seite des Hügels standen riesige, uralte Eichen und mächtige Zedern. Ihre Stämme waren so dick, dass drei Kinder sie nicht umarmen konnten. Ihre Kronen reichten fast bis an die Wolken, und ihr Holz schien hart wie Stein zu sein.</p>
+      <p><em>„Ich muss so werden wie sie“</em>, flüsterte Bo ehrfürchtig. <em>„Ich muss schnell groß werden! Ich muss stark, gerade und fehlerlos sein. Nur dann hat der Gärtner Freude an mir. Ich darf keine Schwäche zeigen. Ich darf niemals nachgeben.“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 1</strong>
+          Doppelseite im warmen Aquarellstil mit sanftem Goldlicht. Links der funkelnde Bachlauf mit Kieselsteinen. Rechts Bo, ein zierliches, aufrechtes Bäumchen. Der Gärtner ist im Hintergrund als warm leuchtende, gütige Gestalt mit Strohhut und weitem Gewand zu sehen, der Blumen pflegt.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 2 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 2</span>
+      <h2>Die große Mühe des kleinen Bo</h2>
+      <p>Von diesem Tag an begann Bo, sich ganz schrecklich anzustrengen.</p>
+      <p>Sobald der Morgen graute, spannte Bo all seine feinen Äste an. Er presste seine Fasern zusammen, hielt die Luft an und drückte mit aller Gewalt:<br>
+      <em>„Wachse! Streck dich! Höher! Schneller! Härter!“</em></p>
+      <p>Wenn ein kleiner Buchfink sich auf einem seiner Zweige niederlassen und ein Lied singen wollte, dachte Bo gehetzt:<br>
+      <em>„Nicht jetzt! Ich habe keine Zeit für Lieder. Ich muss wachsen! Wenn ich mich ausruhe, verliere ich Zeit. Und wenn ich klein bleibe, bin ich wertlos.“</em></p>
+      <p>Wenn die Gänseblümchen im Gras gähnten und ihre Blütenblätter im Abendlicht schlossen, um Gott für den Tag zu danken und einfach zu schlafen, stand Bo stocksteif da. Er zählte im Stillen seine Blätter: <em>Eins, zwei, drei ... gestern waren es auch nur siebzehn. Mache ich etwas falsch? Bin ich nicht fleißig genug?</em></p>
+      <p>Bo merkte gar nicht, wie müde sein Holz wurde. Seine Spitzen schmerzten vor Anspannung, und sein Stamm fühlte sich an wie ein Bogen, der viel zu straff gespannt war. Bo hatte vergessen, wer er war. Er dachte, er müsse sich die Liebe des Gärtners durch eigene Kraft erarbeiten.</p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 2</strong>
+          Fokus auf Bos Stamm. Zart angedeutetes Gesichtchen in der Rinde mit verkrampften Augenbrauen. Die Äste sind starr wie Besenstiele nach oben gestreckt. Neben ihm schlafen kleine Tiere friedlich im Moos unter Gottes Sternenhimmel.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 3 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 3</span>
+      <h2>Dunkle Wolken am Horizont</h2>
+      <p>Eines Nachmittags verdunkelte sich der Himmel. Die goldene Sonne verschwand hinter mächtigen, aschgrauen Wolkenbergen, die wie grimmige Riesen über den Horizont zogen. Der Gesang der Vögel erstarb. Das sanfte Plätschern des Wassers klang plötzlich unruhig.</p>
+      <p>Ein erster, eisiger Windstoß raste über das Tal. Er rüttelte an den Gräsern und riss unsanft an Bos Blättern.</p>
+      <p>Bo erschrak bis ins Mark. Sein Holz zitterte.<br>
+      <em>„Ein Unwetter!“</em>, rauschte das Schilf am Wasser.<br>
+      <em>„Der große Sturm kommt!“</em>, flüsterten die Farnkräuter.</p>
+      <p>In Bos Innerem breitete sich eine lähmende Kälte aus. Angst. Schreckliche, erdrückende Angst.<br>
+      <em>„Wenn der Sturm mich trifft, reißt er mich in Stücke“</em>, hämmerte es in Bos Kopf. <em>„Ich habe noch nicht genug Holz. Ich bin noch nicht stark genug. Ich habe versagt! Ich muss mich wehren. Ich muss gegen den Sturm kämpfen!“</em></p>
+      <p>Bo dachte an die großen Eichen. Er stellte sich vor, wie sie unbeweglich wie Felsblöcke im Sturm standen. Und so fasste das kleine Bäumchen einen folgenschweren Entschluss:<br>
+      <em>„Ich werde nicht weichen. Keinen Millimeter! Ich werde hart sein wie Diamant. Ich werde den Sturm mit meiner eigenen Kraft besiegen!“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 3</strong>
+          Atmosphärischer Kontrast: Das Tal versinkt in Schieferblau- und Sturmgrautönen. Bo verhärtet sich sichtlich, seine Rinde spannt sich, als wollte er ein Schutzschild aus Holz errichten.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 4 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 4</span>
+      <h2>Der Sturm bricht los</h2>
+      <p>Dann brach das Unwetter mit aller Gewalt über den Hügel herein. Mit einem ohrenbetäubenden Brüllen peitschte der Wind über das Land. Blitze zuckten wie silberne Lanzen durch die Finsternis, und der Regen goss wie Wasserfälle herab.</p>
+      <p><em>WUUUUUUSCH! HUUUUUU!</em></p>
+      <p>Der Sturm warf sich mit voller Wucht gegen Bo.<br>
+      Er packte seine Krone, riss an den Blättern und schrie:<br>
+      <em>„Beug dich nieder, Zwerg! Du hast keine Chance gegen mich!“</em></p>
+      <p>Aber Bo schrie in Gedanken verbissen zurück:<br>
+      <em>„Niemals! Ich gebe nicht auf! Ich bin stark! Ich halte stand!“</em></p>
+      <p>Bo verkrampfte jede Faser, die er besaß. Seine Äste wurden hart wie Stahlstangen. Wenn der Wind von Westen drückte, warf sich Bo mit letzter Kraft nach Osten. Wenn der Sturm von oben drückte, stemmte sich Bo wie ein Rammbock nach oben. Er kämpfte um sein Leben, um seinen Wert, um alles.</p>
+      <p><em>KNIRSCH!</em><br>
+      Ein stechender Schmerz durchfuhr Bos Rinde.<br>
+      Ein feiner grüner Ast an seiner Seite konnte der ungeheuren Spannung nicht mehr standhalten. Mit einem lauten <em>KNACK</em> brach das Holz an.</p>
+      <p><em>„Nein!“</em>, weinte Bo lautlos, während der Regen wie Tränen an seinem Stamm herablief. <em>„Ich verliere! Ich bin nicht stark genug! Ich muss mich noch mehr anstrengen! Noch fester!“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 4</strong>
+          Höchste Dramatik. Peitschende Regenfäden, wirbelnde Windspiralen. Bo kämpft krampfhaft. Ein angebrochener Ast hängt schmerzhaft herab. Ein Tropfen goldenes Baumharz tropft wie eine Träne über die dunkle Rinde.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 5 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 5</span>
+      <h2>Am Rande der Kraft</h2>
+      <p>Der Sturm dachte nicht daran, aufzuhören. Es schien, als würde er nur noch wütender toben, je mehr Bo sich ihm widersetzte.</p>
+      <p>Bos kleiner Stamm vibrierte vor Erschöpfung. Seine Fasern brannten wie Feuer. Seine zarten Wurzeln im Boden krampften sich zusammen, als wollten sie Steine zermalmen. Er war am Ende. Er hatte keinen Funken Kraft mehr übrig.</p>
+      <p><em>„Ich schaffe es nicht“</em>, schluchzte Bo in das Heulen des Windes hinein. Eine tiefe, dunkle Verzweiflung legte sich auf sein Herz. <em>„Ich habe gekämpft. Ich habe mein Bestes gegeben. Aber ich bin zu klein. Zu schwach. Wenn ich loslasse, bin ich verloren. Der Gärtner wird sich für mich schämen.“</em></p>
+      <p>Der Sturm holte noch einmal tief Atem – zu einer gigantischen Böe, die Bo mitsamt seinen Wurzeln aus dem Boden reißen wollte. Bo kniff die Augen fest zu. Seine Äste erschlafften vor Kraftlosigkeit. Er wartete auf das berstende Geräusch, wenn sein kleiner Stamm mitten entzweibrach.</p>
+      <p><em>„Es tut mir leid...“</em>, hauchte Bo. <em>„Gärtner, vergib mir. Ich war nicht gut genug.“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 5</strong>
+          Nahaufnahme von Bo im tiefsten Schatten des Unwetters. Sein Stamm neigt sich gefährlich, die Blätter sind zerzaust. Alles wirkt verloren – bis auf einen winzigen goldenen Lichtschein am unteren Bildrand.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 6 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 6</span>
+      <h2>Die durchbohrten Hände der Liebe</h2>
+      <p>Mitten im Tosen des Sturms – genau in der Sekunde, als Bos letzter Widerstand erlosch – geschah kein Knacken. Kein Bruch.</p>
+      <p>Sondern Bo spürte plötzlich zwei Hände.</p>
+      <p>Große, unendlich feste und doch unfassbar sanfte Hände, die sich schützend um seinen zitternden Stamm legten. Sie drückten ihn nicht gewaltsam zurecht. Sie rissen nicht an ihm. Sie hielten ihn einfach. Und an diesen Händen waren Spuren zu sehen – Spuren alter Wunden, Zeichen grenzenloser Hingabe und Liebe, die sagten: <em>Ich habe alles für dich gegeben.</em></p>
+      <p>Aus den Händen strömte eine wunderbare, tiefe Wärme. Es war keine gewöhnliche Wärme; es war das Leben selbst. Sie drang durch das kalte, nasse Moos, durch Bos schmerzende Rinde, tief hinein in das innerste Mark seines kleinen Stammes.</p>
+      <p>Der Sturm heulte immer noch wie ein wildes Tier, aber plötzlich klang das Heulen ganz weit weg – wie gedämpft durch einen weichen Mantel.</p>
+      <p>Bo schlug vorsichtig die Augen auf.</p>
+      <p>Vor ihm kniete der Gärtner im nassen Schlamm. Der Regen tropfte von Seinem Gewand, der Wind zerrte an Seinen Haaren, aber Sein Gesicht war so still und leuchtend wie die Morgensonne. In Seinen Augen spiegelte sich nicht der geringste Zorn, keine Enttäuschung, kein Vorwurf. Nur reine, unendliche Barmherzigkeit.</p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 6</strong>
+          Der heilige Wendepunkt: Ein überirdisch warmes, goldenes Licht umgibt den Gärtner, der vor dem kleinen Baum im nassen Gras kniet. Seine Hände umschließen den Stamm von Bo wie eine sichere Wiege. An Seinen Händen sind feine Wundmale angedeutet.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 7 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 7</span>
+      <h2>Das Geheimnis des Samenkorns</h2>
+      <p>Der Gärtner beugte sich so nah an Bos Krone heran, dass Sein warmer Atem die zitternden Blättchen streichelte. Seine Stimme war tief, sanft und voller Frieden – lauter als jeder Donner:</p>
+
+      <div class="highlight-quote">
+        „Mein geliebtes Kind. Warum kämpfst du so schwer?<br>
+        Du musst dich nicht anstrengen.<br>
+        Du musst den Sturm nicht besiegen.<br>
+        Du bist am Wasser gepflanzt.<br>
+        Ruh dich einfach aus und lass dich wärmen.“
+      </div>
+
+      <p>Große Harztränen liefen über Bos Rinde.<br>
+      <em>„Aber Gärtner!“</em>, schluchzte er mit zitternden Ästen. <em>„Ich wollte doch stark sein für dich! Ich wollte so groß und mächtig werden wie die Eichen! Wenn ich mich nicht anstrenge, zerbricht der Sturm mich! Ich muss doch beweisen, dass ich es wert bin, in deinem Garten zu stehen!“</em></p>
+      <p>Da lächelte der Gärtner. Seine Augen wurden ganz feucht vor Liebe. Er strich mit Seinem Daumen sanft über die Wunde an Bos angebrochenem Zweig und sprach Worte, die Bo nie wieder vergessen sollte:</p>
+      <p><em>„Ach, Bo. Weißt du denn nicht mehr, wer du bist?<br>
+      Noch ehe du ein Blatt hattest, ja noch ehe du eine Wurzel in die Erde senktest – als du noch ein winziges, unscheinbares Samenkorn in meiner Handfläche warst: <strong>Da habe ich dich schon gekannt.</strong><br>
+      Ich habe dich beim Namen gerufen, lange bevor die Welt dich sah. Ich habe dich geliebt, als du noch gar nichts leisten konntest. Und ich liebe dich jetzt, genau so, wie du bist.</em></p>
+      <p><em>Wachsen ist kein Kampf, Bo. Gnade ist keine Belohnung für harte Arbeit.<br>
+      Hast du jemals die Lilien auf dem Felde gesehen? Sie sorgen sich nicht, sie mühen sich nicht ab, sie spinnen nicht – und doch kleide ich sie schöner als jeden König. Du musst dir meine Liebe nicht erarbeiten. Du bist mein.“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 7</strong>
+          Zärtliche Nahaufnahme. In einer leuchtenden Traumsphäre sieht man den Gärtner vor vielen Jahren, wie Er liebevoll ein einzelnes goldenes Samenkorn in Seiner Handfläche betrachtet und anlächelt (Jeremia 1,5).
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 8 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 8</span>
+      <h2>Das lebendige Wasser</h2>
+      <p>Bo lauschte den Worten. Sie fielen wie lindernder Balsam auf all seine verletzten Fasern.<br>
+      <em>„Aber... was ist mit dem Sturm?“</em>, fragte Bo leise. <em>„Was soll ich tun, wenn der Wind wieder drückt?“</em></p>
+      <p>Der Gärtner nahm eine Hand vom Stamm und zeigte hinab zum Ufer des Baches.<br>
+      <em>„Schau dir die Gräser und das Schilf an, Bo. Kämpfen sie gegen den Wind?“</em></p>
+      <p>Bo schaute hinunter. Die zarten Grashalme stellten sich dem Sturm überhaupt nicht entgegen. Wenn eine Böe kam, neigten sie sich ganz tief, fast bis ins schäumende Wasser hinein. Sie machten sich weich, geschmeidig und demütig. Sie ließen den Wind über sich hinwegfegen. Und sobald der Stoß vorüber war, richteten sie sich mühelos wieder auf.</p>
+      <p><em>„Wer sich in seinem Stolz verhärtet und krampfhaft starr bleibt, der bricht“</em>, erklärte der Gärtner sanft. <em>„Aber wer loslässt, sich beugt und mir vertraut, der tanzt.<br>
+      Und das Größte, Bo, liegt im Verborgenen. Schau unter die Erde.“</em></p>
+      <p>Der Gärtner legte Seine Hand auf den nassen Boden über Bos Wurzelwerk:<br>
+      <em>„Ich habe dich mit voller Absicht nicht auf trockenen Wüstenfels gesetzt. Ich habe dich an diesen Bach gepflanzt – an die Quelle des Lebens. Deine Wurzeln sind längst im Wasser verankert. Das Wasser trinkt sich ganz von selbst, ohne dass du dich abmühen musst. Es nährt dich Tag und Nacht. Wenn du dich an mich lehnst, kann kein Sturm dieser Welt dich jemals von mir trennen.“</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 8</strong>
+          Schnittbild (Halb über der Erde, halb unter der Erde): Oben das Unwetter mit sich biegenden Halmen. Unten im Erdreich Bos leuchtende Wurzeln, die tief im glasklaren Bachwasser ruhen. Unverrückbare Geborgenheit.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 9 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 9</span>
+      <h2>Das Wunder des Loslassens</h2>
+      <p>In diesem Augenblick geschah das größte Wunder in Bos Leben. Nicht der Sturm hörte auf – sondern Bos Kampf hörte auf.</p>
+      <p>Bo blickte in das Gesicht seines Schöpfers. Er sah die Liebe, die keine Bedingungen stellte. Er sah, dass er nicht groß sein musste, um wertvoll zu sein. Er durfte klein sein. Er durfte bedürftig sein. Er durfte einfach ein Kind des Gärtners sein.</p>
+      <p>Bo atmete tief und lange aus. Ein Seufzer der Erleichterung ging durch seine Krone.<br>
+      Er ließ die Anspannung in seinen Zweigen fallen. Seine Rinde wurde weich.<br>
+      Er hörte auf, seine Äste krampfhaft nach oben zu zwingen.<br>
+      Er lehnte seinen Stamm ganz an die starke, feste Schulter des Gärtners.</p>
+      <p>Und dann traf die nächste Sturmfront auf den Hügel.</p>
+      <p><em>HUUUUUUUUUUUUUU!</em></p>
+      <p>Der Wind heulte auf und packte Bo mit gewaltiger Kraft. Aber Bo wehrte sich nicht mehr. Er hielt nicht mehr dagegen. Er gab nach. Er neigte sich tief zur Seite, schmiegte sich an die Hand des Gärtners und ließ sich vom Wind wiegen. Seine Blätter flatterten im Sturm wie Fahnen der Freude. Tief unten saugten seine Wurzeln in aller Ruhe das kühle, lebendige Wasser auf.</p>
+      <p>Der Sturm tobte weiter. Aber in Bos Herzen war vollkommener Friede eingekehrt.<br>
+      Er wusste:<br>
+      <em>Gott hält mich fest.<br>
+      Ich muss nichts beweisen.<br>
+      Ich muss den Sturm nicht besiegen.<br>
+      Ich darf mich einfach wärmen lassen.</em></p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 9</strong>
+          Bo biegt sich voller Anmut im Sturmwind, getragen von Gottes Nähe. Der Gärtner breitet Seinen weiten Mantel wie ein Schutzsegel aus. Ein friedliches Lächeln auf Bos Gesichtchen – pures Vertrauen.
+        </div>
+      </div>
+    </article>
+
+    <!-- KAPITEL 10 -->
+    <article class="chapter">
+      <span class="chapter-number">Kapitel 10</span>
+      <h2>Der goldene Morgen</h2>
+      <p>Am nächsten Morgen war der Himmel rein gewaschen. Die Wolken hatten sich verzogen, und eine goldene, milde Morgensonne ging auf. Ihre Strahlen brachen sich in Millionen funkelnder Wassertropfen auf den Wiesen. Es roch nach neuer Schöpfung, nach blühendem Klee und frischem Leben.</p>
+      <p>Bo erwachte aus einem tiefen, friedlichen Schlaf. Er streckte genüsslich seine Zweige aus – nicht mit Krampf, sondern voller Freude.</p>
+      <p>Er sah an sich herab. Seine Rinde war unversehrt. Und an der Stelle, wo der Zweig angeknackst war, hatte der Gärtner in der Nacht ein weißes, feines Leinenband angebracht und ihn mit heilendem Harzbalsam gesalbt. Es tat überhaupt nicht mehr weh.</p>
+      <p>Und dann spürte Bo etwas Tiefes im Boden: Seine Wurzeln hatten sich in der Nacht, während er einfach geruht und vertraut hatte, noch tiefer in das Bett der Quelle gegraben. Sie waren stärker geworden – nicht durch eigene Anstrengung, sondern durch das Loslassen im Sturm.</p>
+      <p>Ein kleiner Zaunkönig landete auf Bos Zweig und schmetterte aus voller Kehle ein Loblied in den Morgenhimmel. Ein Schmetterling wärmte seine Flügel auf einem seiner Blätter.</p>
+      <p>Da kam der Gärtner den Pfad entlanggeschritten. Er trug Seine hölzerne Kanne, blickte Bo an und Sein Gesicht strahlte vor Freude.</p>
+      <p><em>„Friede sei mit dir, mein kleiner Tänzer“</em>, rief Er mit warmer Stimme.</p>
+      <p>Bo raschelte leise und glücklich mit all seinen Blättern im Sonnenlicht. Es klang wie ein fröhliches „Amen“.</p>
+      <p>Jetzt wusste er das große Geheimnis des Lebens:<br>
+      Man wächst nicht durch Kämpfen und Sorgen.<br>
+      Man wächst, indem man Seine Wurzeln in Seine Liebe senkt.<br>
+      Man wächst, indem man sich von Seinen Händen tragen und wärmen lässt.</p>
+      <p>Und Bo wuchs. Ganz ohne Mühe. Blatt für Blatt. Frucht für Frucht. Geborgen in der Hand des Gärtners.</p>
+
+      <div class="illustration-card">
+        <div class="illustration-icon">🎨</div>
+        <div class="illustration-content">
+          <strong>Illustrations-Szene 10</strong>
+          Strahlendes Morgenlicht. Bo mit leuchtend grüner Krone, weißes Bändchen am geheilten Ast. Vögel singen auf seinen Zweigen. Der Gärtner steht lächelnd vor ihm, die Arme liebevoll ausgebreitet. Tiefer göttlicher Friede.
+        </div>
+      </div>
+    </article>
+
+    <!-- GEBET -->
+    <div class="prayer-box">
+      <h3>🙏 Ein kleines Gute-Nacht-Gebet</h3>
+      <div class="prayer-text">
+        <p>„Lieber Gott, mein guter Gärtner,<br>
+        danke, dass du mich schon gekannt hast, als ich noch ein winziges Samenkorn war.<br>
+        Danke, dass ich heute nichts mehr leisten muss.<br>
+        Wenn Sorgen wie ein Sturm in meinem Kopf brausen, hilf mir, mich nicht zu verkrampfen.<br>
+        Ich lege all meine Mühe in deine warmen, starken Hände.<br>
+        Lass meine Wurzeln heute Nacht tief in deine Liebe wachsen.<br>
+        Ich bin dein Kind. Ich darf einfach schlafen und wachsen.<br>
+        Amen.“</p>
+      </div>
+    </div>
+
+    <!-- RITUAL -->
+    <div class="ritual-box">
+      <h3>🌳 Das Wurzel-Ritual: Geborgen einschlafen</h3>
+      <p><em>Kuschele dich tief in deine Bettdecke:</em></p>
+      <ol class="step-list">
+        <li><strong>Die Zweige entspannen:</strong> Zieh deine Schultern fest hoch zu den Ohren, balle Fäuste wie Bo im Sturm. Zähle leise: <em>1, 2, 3...</em> und dann: <strong>Lass alles los!</strong> Puste kräftig aus. Spüre, wie deine Arme butterweich in die Matratze sinken.</li>
+        <li><strong>Die Wurzeln der Gnade:</strong> Spüre deine Beine und Füße. Stell dir vor, deine Wurzeln reichen tief in Gottes gute Erde. Er hält dich fest. Du kannst niemals tiefer fallen als in Seine Hand.</li>
+        <li><strong>Das Lebenswasser trinken:</strong> Atme tief durch die Nase ein – atme Seinen Frieden und Seine Frische ein. Atme sanft durch den Mund aus – gib Ihm all deine Sorgen und Anstrengungen des Tages ab.</li>
+        <li><strong>Die Hand des Vaters:</strong> Spüre, wie Seine Hand schützend auf deinem Herzen liegt. Er wacht über dich, während du schläfst. Du darfst dich ausruhen.</li>
+      </ol>
+      <p style="text-align: right; font-style: italic; margin-top: 15px; color: var(--accent-green);">Gute Nacht, kleiner Baum. Du wirst geliebt. ✨</p>
+    </div>
+
+    <!-- SCHATZKISTE DER BIBEL -->
+    <div class="parents-section">
+      <h3>📖 Wo die Geschichte in der Bibel wohnt</h3>
+      <p>Eine kleine Schatzkarte für Eltern, Großeltern und Kindergottesdienst-Leiter:</p>
+      <table class="bible-table">
+        <thead>
+          <tr>
+            <th>Thema</th>
+            <th>Bibelstelle</th>
+            <th>Kernaussage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Das Samenkorn</strong></td>
+            <td>Jeremia 1,5 / Ps 139,13-16</td>
+            <td>Gott kannte und liebte dich vor aller Leistung und vor deiner Geburt.</td>
+          </tr>
+          <tr>
+            <td><strong>Gepflanzt am Wasser</strong></td>
+            <td>Jeremia 17,7–8 / Ps 1,2–3</td>
+            <td>Wer am lebendigen Wasser wurzelt, fürchtet weder Dürre noch Sturm.</td>
+          </tr>
+          <tr>
+            <td><strong>Der liebende Gärtner</strong></td>
+            <td>Johannes 15,1 / Jes 5,1–7</td>
+            <td>Gott ist der Weingärtner, der behütet, heilt und verbindet.</td>
+          </tr>
+          <tr>
+            <td><strong>Lilien auf dem Felde</strong></td>
+            <td>Matthäus 6,25–34</td>
+            <td>Wachstum ist ein Geschenk der Gnade, kein krampfhafter Eigenbau.</td>
+          </tr>
+          <tr>
+            <td><strong>Geborgen in Seiner Hand</strong></td>
+            <td>Jesaja 43,1 / Joh 10,28</td>
+            <td>„Fürchte dich nicht, ich habe dich bei deinem Namen gerufen; du bist mein!“</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>„Der kleine Baum, der wachsen durfte“ • Geschrieben mit Liebe und Trost für starke und zarte Kinderseelen.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
