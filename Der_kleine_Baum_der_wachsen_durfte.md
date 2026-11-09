@@ -1,6 +1,8 @@
 # Der kleine Baum, der wachsen durfte
-### Ein christliches Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
+### Ein christliches Bilder- & Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
 **Für Kinder von 4 bis 9 Jahren**
+
+![Cover: Der kleine Baum, der wachsen durfte](images/cover.jpg)
 
 ---
 
@@ -39,6 +41,8 @@
 
 ## Kapitel 1: Am Ufer des Lebenswassers
 
+![Szene 1: Bo am Ufer des Lebenswassers](images/szene1_bach.jpg)
+
 Es war einmal ein sonniger Hügel, an dessen Fuße ein kleiner, glasklarer Bach entlangmurmelte. Direkt an seinem Ufer, wo das Moos weich wie Samt war und der Duft von frischer Erde in der Luft lag, stand Bo.
 
 Bo war ein junges Bäumchen. Seine Rinde war noch glatt und zartbraun, und seine Zweige reckten sich neugierig in den Himmel wie kleine Hände beim Gebet. An seinen Spitzen sprossen helle Blätter – rund, fein geädert und glänzend im Sonnenlicht.
@@ -51,9 +55,6 @@ Doch mit der Zeit schaute Bo immer seltener auf den Gärtner – und immer öfte
 Auf der anderen Seite des Hügels standen riesige, uralte Eichen und mächtige Zedern. Ihre Stämme waren so dick, dass drei Kinder sie nicht umarmen konnten. Ihre Kronen reichten fast bis an die Wolken, und ihr Holz schien hart wie Stein zu sein.
 
 *„Ich muss so werden wie sie“*, flüsterte Bo ehrfürchtig. *„Ich muss schnell groß werden! Ich muss stark, gerade und fehlerlos sein. Nur dann hat der Gärtner Freude an mir. Ich darf keine Schwäche zeigen. Ich darf niemals nachgeben.“*
-
-> **Bildidee / Illustrationshinweis:**  
-> *Doppelseite im warmen Aquarellstil mit sanftem Goldlicht. Links der funkelnde Bachlauf mit Kieselsteinen. Rechts Bo, ein zierliches, aufrechtes Bäumchen mit hellgrünen Blättern. Der Gärtner ist im Hintergrund als warm leuchtende, gütige Gestalt mit Strohhut und weitem Gewand zu sehen, der lächelnd Blumen pflegt. In der Ferne mächtige Eichen.*
 
 ---
 
@@ -71,9 +72,6 @@ Wenn die Gänseblümchen im Gras gähnten und ihre Blütenblätter im Abendlicht
 
 Bo merkte gar nicht, wie müde sein Holz wurde. Seine Spitzen schmerzten vor Anspannung, und sein Stamm fühlte sich an wie ein Bogen, der viel zu straff gespannt war.  
 Bo hatte vergessen, wer er war. Er dachte, er müsse sich die Liebe des Gärtners durch eigene Kraft erarbeiten.
-
-> **Bildidee / Illustrationshinweis:**  
-> *Fokus auf Bos Stamm. Zart angedeutetes Gesichtchen in der Rinde mit verkrampften Augenbrauen und gepressten Lippen. Die Äste sind starr wie Besenstiele nach oben gestreckt. Neben ihm schlafen kleine Waldtiere friedlich im Moos unter Gottes Sternenhimmel, während Bo verbissen wachbleibt.*
 
 ---
 
@@ -94,12 +92,11 @@ In Bos Innerem breitete sich eine lähmende Kälte aus. Angst. Schreckliche, erd
 Bo dachte an die großen Eichen. Er stellte sich vor, wie sie unbeweglich wie Felsblöcke im Sturm standen. Und so fasste das kleine Bäumchen einen folgenschweren Entschluss:  
 *„Ich werde nicht weichen. Keinen Millimeter! Ich werde hart sein wie Diamant. Ich werde den Sturm mit meiner eigenen Kraft besiegen!“*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Atmosphärischer Kontrast: Das Tal versinkt in dunklen Grau- und Schieferblautönen. Mächtige Wolkengebirge türmen sich auf. Der Wind zerzaust die Gräser. Bo verhärtet sich sichtlich, seine Rinde spannt sich, als wollte er ein Schutzschild aus Holz errichten.*
-
 ---
 
 ## Kapitel 4: Der Sturm bricht los
+
+![Szene 4: Bo im peitschenden Sturm](images/szene4_sturm.jpg)
 
 Dann brach das Unwetter mit aller Gewalt über den Hügel herein.  
 Mit einem ohrenbetäubenden Brüllen peitschte der Wind über das Land. Blitze zuckten wie silberne Lanzen durch die Finsternis, und der Regen goss wie Wasserfälle herab.
@@ -122,9 +119,6 @@ Ein feiner grüner Ast an seiner Seite konnte der ungeheuren Spannung nicht mehr
 
 *„Nein!“*, weinte Bo lautlos, während der Regen wie Tränen an seinem Stamm herablief. *„Ich verliere! Ich bin nicht stark genug! Ich muss mich noch mehr anstrengen! Noch fester!“*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Höchste Dramatik. Peitschende Regenfäden, wirbelnde Windspiralen. Bo kämpft krampfhaft gegen die Naturgewalten. Ein angebrochener Ast hängt schmerzhaft herab. Ein Tropfen goldenes Baumharz tropft wie eine Träne über die dunkle Rinde.*
-
 ---
 
 ## Kapitel 5: Am Rande der Kraft
@@ -142,12 +136,11 @@ Bo kniff die Augen fest zu. Seine Äste erschlafften vor Kraftlosigkeit. Er wart
 
 *„Es tut mir leid...“*, hauchte Bo. *„Gärtner, vergib mir. Ich war nicht gut genug.“*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Nahaufnahme von Bo im tiefsten Schatten des Unwetters. Sein Stamm neigt sich gefährlich, die Rinde zersplittert fast vor Spannung, die Blätter sind zerzaust. Alles wirkt verloren – bis auf einen winzigen goldenen Lichtschein am unteren Bildrand.*
-
 ---
 
 ## Kapitel 6: Die durchbohrten Hände der Liebe
+
+![Szene 6: Der Gärtner tröstet und hält Bo](images/szene6_gaertner_trost.jpg)
 
 Mitten im Tosen des Sturms – genau in der Sekunde, als Bos letzter Widerstand erlosch – geschah kein Knacken. Kein Bruch.
 
@@ -166,12 +159,11 @@ Bo schlug vorsichtig die Augen auf.
 Vor ihm kniete der Gärtner im nassen Schlamm.  
 Der Regen tropfte von Seinem Gewand, der Wind zerrte an Seinen Haaren, aber Sein Gesicht war so still und leuchtend wie die Morgensonne. In Seinen Augen spiegelte sich nicht der geringste Zorn, keine Enttäuschung, kein Vorwurf. Nur reine, unendliche Barmherzigkeit.
 
-> **Bildidee / Illustrationshinweis:**  
-> *Der heilige Wendepunkt: Ein überirdisch warmes, goldenes Licht umgibt den Gärtner, der im Unwetter vor dem kleinen Baum im nassen Gras kniet. Seine Hände umschließen den Stamm von Bo wie eine sichere Wiege. An Seinen Handgelenken/Handflächen sind feine, verheilte Spuren der Liebe angedeutet. Sein Blick ist vollkommen voller Frieden.*
-
 ---
 
 ## Kapitel 7: Das Geheimnis des Samenkorns
+
+![Szene 7: Das goldene Samenkorn in Gottes Hand](images/szene7_samenkorn.jpg)
 
 Der Gärtner beugte sich so nah an Bos Krone heran, dass Sein warmer Atem die zitternden Blättchen streichelte. Seine Stimme war tief, sanft und voller Frieden – lauter als jeder Donner:
 
@@ -193,12 +185,11 @@ Ich habe dich beim Namen gerufen, lange bevor die Welt dich sah. Ich habe dich g
 *Wachsen ist kein Kampf, Bo. Gnade ist keine Belohnung für harte Arbeit.  
 Hast du jemals die Lilien auf dem Felde gesehen? Sie sorgen sich nicht, sie mühen sich nicht ab, sie spinnen nicht – und doch kleide ich sie schöner als jeden König. Du musst dir meine Liebe nicht erarbeiten. Du bist mein.“*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Eine zärtliche Nahaufnahme voller Geborgenheit. Der Gärtner hält das Bäumchen nahe an Seine Wange. In einer leuchtenden Gedankenblase oder Traumsphäre sieht man den Gärtner vor vielen Jahren, wie Er liebevoll ein einzelnes kleines goldenes Samenkorn in Seiner Handfläche betrachtet und anlächelt (Jeremia 1,5).*
-
 ---
 
 ## Kapitel 8: Das lebendige Wasser
+
+![Szene 8: Wurzeln im lebendigen Wasser](images/szene8_wurzeln_wasser.jpg)
 
 Bo lauschte den Worten. Sie fielen wie lindernder Balsam auf all seine verletzten Fasern.  
 *„Aber... was ist mit dem Sturm?“*, fragte Bo leise. *„Was soll ich tun, wenn der Wind wieder drückt?“*
@@ -214,12 +205,11 @@ Und das Größte, Bo, liegt im Verborgenen. Schau unter die Erde.“*
 Der Gärtner legte Seine Hand auf den nassen Boden über Bos Wurzelwerk:  
 *„Ich habe dich mit voller Absicht nicht auf trockenen Wüstenfels gesetzt. Ich habe dich an diesen Bach gepflanzt – an die Quelle des Lebens. Deine Wurzeln sind längst im Wasser verankert. Das Wasser trinkt sich ganz von selbst, ohne dass du dich abmühen musst. Es nährt dich Tag und Nacht. Wenn du dich an mich lehnst, kann kein Sturm dieser Welt dich jemals von mir trennen.“*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Schnittbild (Halb über der Erde, halb unter der Erde): Oben sieht man das Unwetter, das Schilf biegt sich elastisch im Wind. Unten im warmen Erdreich leuchten Bos weiße, weit verzweigte Wurzeln, die tief in das kristallklare, himmlisch schimmernde Wasser des Baches eintauchen. Reiche Fülle und unverrückbare Geborgenheit im Verborgenen.*
-
 ---
 
 ## Kapitel 9: Das Wunder des Loslassens
+
+![Szene 9: Der Tanz im Wind](images/szene9_tanz_im_wind.jpg)
 
 In diesem Augenblick geschah das größte Wunder in Bos Leben.  
 Nicht der Sturm hörte auf – sondern Bos Kampf hörte auf.
@@ -248,12 +238,11 @@ Er wusste:
 *Ich muss den Sturm nicht besiegen.*  
 *Ich darf mich einfach wärmen lassen.*
 
-> **Bildidee / Illustrationshinweis:**  
-> *Befreite Bewegung voller Dynamik und Anmut: Bo biegt sich wie eine anmutige Tänzerin im Sturmwind, seine Äste fließen geschmeidig mit dem Luftstrom. Der Gärtner steht schützend daneben, Seinen weiten Mantel wie ein Segel des Schutzes ausgebreitet. Ein Lächeln auf Bos Gesicht – keine Angst mehr, sondern pures Vertrauen.*
-
 ---
 
 ## Kapitel 10: Der goldene Morgen
+
+![Szene 10: Der goldene Morgen des Friedens](images/szene10_goldener_morgen.jpg)
 
 Am nächsten Morgen war der Himmel rein gewaschen.
 
@@ -283,11 +272,6 @@ Und Bo wuchs.
 Ganz ohne Mühe.  
 Blatt für Blatt. Frucht für Frucht.  
 Geborgen in der Hand des Gärtners.
-
----
-
-> **Bildidee / Illustrationshinweis:**  
-> *Vollendete Harmonie auf ganzer Doppelseite: Strahlendes, himmlisches Morgenlicht. Bo mit leuchtend grüner, gesunder Krone, das weiße Bändchen am Zweig zeugt von der liebevollen Pflege. Vögel singen auf seinen Ästen. Der Gärtner steht lächelnd vor ihm, die Arme liebevoll ausgebreitet. Ein Bild tiefen Friedens, der direkt ins Herz geht.*
 
 ---
 ---
