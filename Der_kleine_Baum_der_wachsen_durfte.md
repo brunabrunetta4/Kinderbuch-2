@@ -45,12 +45,12 @@
 
 Es war einmal ein sonniger Hügel, an dessen Fuße ein kleiner, glasklarer Bach entlangmurmelte. Direkt an seinem Ufer, wo das Moos weich wie Samt war und der Duft von frischer Erde in der Luft lag, stand Bo.
 
-Bo war ein junges Bäumchen. Seine Rinde war noch glatt und zartbraun, und seine Zweige reckten sich neugierig in den Himmel wie kleine Hände beim Gebet. An seinen Spitzen sprossen helle Blätter – rund, fein geädert und glänzend im Sonnenlicht.
+Bo war ein junges Bäumchen. Seine Rinde war noch glatt und zartbraun, und seine Zweige reckten sich neugierig in den Himmel wie kleine Hände beim Gebet. Seine starken, knorrigen Wurzeln reichten bis tief in das kühle Bachwasser hinein, und an seinen Spitzen sprossen helle Blätter – rund, fein geädert und glänzend im Sonnenlicht.
 
 Bo stand nicht zufällig an diesem Ufer.  
-Der Gärtner selbst hatte ihn hierher gebracht. Der Gärtner hatte den Hügel angelegt, die Blumen gesät und den Bach zum Fließen gebracht. Er besuchte Bo jeden Tag, strich sanft über seine Rinde und sah ihn mit Augen an, in denen die ganze Liebe des Himmels lag.
+Der Gärtner selbst hatte ihn hierher gebracht. Der Gärtner hatte den Hügel angelegt, die Blumen gesät und den Bach zum Fließen gebracht. Er kniete oft ganz nah bei Bo im weichen Gras, strich über die kleinen Wildblumen am Ufer und sah Bo mit Augen an, in denen die ganze Liebe und Geduld des Himmels lag.
 
-Doch mit der Zeit schaute Bo immer seltener auf den Gärtner – und immer öfter auf die anderen Bäume.
+Doch obwohl der liebevolle Gärtner ihm so nah war, schaute Bo immer seltener auf Ihn – und immer öfter auf die anderen Bäume.
 
 Auf der anderen Seite des Hügels standen riesige, uralte Eichen und mächtige Zedern. Ihre Stämme waren so dick, dass drei Kinder sie nicht umarmen konnten. Ihre Kronen reichten fast bis an die Wolken, und ihr Holz schien hart wie Stein zu sein.
 
