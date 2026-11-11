@@ -87,7 +87,7 @@ Bo erschrak bis ins Mark. Sein Holz zitterte.
 *„Der große Sturm kommt!“*, flüsterten die Farnkräuter.
 
 In Bos Innerem breitete sich eine lähmende Kälte aus. Angst. Schreckliche, erdrückende Angst.  
-*„Wenn der Sturm mich trifft, reißt er mich in Stücke“*, hämmerte es in Bos Kopf. *„Ich habe noch nicht genug Holz. Ich bin noch nicht stark genug. Ich habe versagt! Ich muss mich wehren. Ich muss gegen den Sturm kämpfen!“*
+*„Wenn der Sturm mich trifft, reißt er mich in Stücke“*, hämmerte es in seinen Gedanken. *„Ich habe noch nicht genug Holz. Ich bin noch nicht stark genug. Ich habe versagt! Ich muss mich wehren. Ich muss gegen den Sturm kämpfen!“*
 
 Bo dachte an die großen Eichen. Er stellte sich vor, wie sie unbeweglich wie Felsblöcke im Sturm standen. Und so fasste das kleine Bäumchen einen folgenschweren Entschluss:  
 *„Ich werde nicht weichen. Keinen Millimeter! Ich werde hart sein wie Diamant. Ich werde den Sturm mit meiner eigenen Kraft besiegen!“*
