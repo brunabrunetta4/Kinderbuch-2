@@ -1,6 +1,7 @@
 # Der kleine Baum, der wachsen durfte
 ### Ein christliches Bilder- & Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
-**Für Kinder von 4 bis 9 Jahren**
+**Für Kinder von 4 bis 9 Jahren**  
+**ISBN 978-3-9525285-5-6 (Schweiz)**
 
 ![Cover: Der kleine Baum, der wachsen durfte](images/cover.jpg)
 
@@ -348,3 +349,17 @@ Dieses Kinderbuch basiert auf tiefen, zentralen Wahrheiten des christlichen Glau
 | **Sorglos wachsen wie die Blumen** | **Matthäus 6,25–34** | *„Schaut die Lilien auf dem Felde an...“* Wachstum geschieht durch Empfangen von Gottes Versorgung, nicht durch ängstliche Selbstoptimierung. |
 | **Nicht aus Werken, sondern aus Gnade** | **Epheser 2,8–9** | *„Aus Gnade seid ihr gerettet durch Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus Werken.“* |
 | **Getragen in Seiner Hand** | **Jesaja 43,1** / **Johannes 10,28** | *„Fürchte dich nicht, ich habe dich bei deinem Namen gerufen; du bist mein!“* |
+
+---
+
+## Impressum & Bibliografische Angaben
+
+* **Titel:** Der kleine Baum, der wachsen durfte
+* **Untertitel:** Ein christliches Bilder- & Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
+* **Zielgruppe:** Kinder von 4 bis 9 Jahren (und deren Begleitpersonen)
+* **ISBN:** 978-3-9525285-5-6 (Schweizerische Eidgenossenschaft / Nationalbibliothek Bern)
+* **Sprache:** Deutsch
+* **Erscheinungsjahr:** 2026
+* **Text & Illustrationen:** Schweizer Erstausgabe
+* **Alle Rechte vorbehalten.**
+
