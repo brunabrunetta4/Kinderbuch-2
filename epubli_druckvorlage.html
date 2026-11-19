@@ -268,12 +268,20 @@
       }
     }
     @media print {
+      .floating-nav { display: none !important; }
       body { background: none; padding: 0; }
       .sheet { box-shadow: none; border: none; }
     }
   </style>
 </head>
 <body>
+
+  <div class="floating-nav" style="position: fixed; top: 12px; left: 50%; transform: translateX(-50%); background: #2c6e49; color: white; padding: 8px 18px; border-radius: 30px; font-family: system-ui, -apple-system, sans-serif; font-size: 13px; z-index: 9999; display: flex; gap: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.25); align-items: center;">
+    <strong>📄 epubli Buchblock (18 Seiten)</strong>
+    <a href="index.html" style="color: white; text-decoration: underline;">📖 Buch-Webseite</a>
+    <a href="epubli_cover.html" style="color: white; text-decoration: underline;">📕 Hardcover Umschlag</a>
+    <a href="epubli_buchblock_inhalt.pdf" target="_blank" style="background: #b87d28; color: white; padding: 4px 10px; border-radius: 12px; text-decoration: none; font-weight: bold;">📥 Buchblock PDF öffnen</a>
+  </div>
 
   <!-- 1. TITELSEITE -->
   <section class="sheet">

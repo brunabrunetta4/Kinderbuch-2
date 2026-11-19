@@ -365,6 +365,7 @@
     }
 
     @media print {
+      .epubli-nav-bar { display: none !important; }
       body {
         background: white;
         padding: 0;
@@ -382,6 +383,19 @@
   </style>
 </head>
 <body>
+
+  <!-- EPULBLI NAVIGATION BAR -->
+  <div class="epubli-nav-bar" style="background: #2c6e49; color: white; padding: 12px 20px; border-radius: 12px; max-width: 860px; margin: 15px auto 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; font-family: system-ui, -apple-system, sans-serif; font-size: 0.92rem; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+    <div style="font-weight: bold; display: flex; align-items: center; gap: 8px;">
+      <span>📚 epubli Druck- &amp; Ansichts-Zentrale:</span>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <a href="epubli_cover.html" target="_blank" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">📕 Hardcover Umschlag</a>
+      <a href="epubli_druckvorlage.html" target="_blank" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">📄 Buchblock (18 S.)</a>
+      <a href="epubli_hardcover_umschlag.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600;">📥 Umschlag PDF</a>
+      <a href="epubli_buchblock_inhalt.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600;">📥 Buchblock PDF</a>
+    </div>
+  </div>
 
   <div class="container">
     <header>
