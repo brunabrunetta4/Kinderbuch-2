@@ -1,6 +1,6 @@
 # Der kleine Baum, der wachsen durfte
 ### Ein christliches Bilder- & Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
-**Für Kinder von 4 bis 9 Jahren**  
+**Für Kinder von 4 bis 99 Jahren**  
 **ISBN 978-3-9525285-5-6 (Schweiz)**
 
 ![Cover: Der kleine Baum, der wachsen durfte](images/cover.jpg)
@@ -356,7 +356,7 @@ Dieses Kinderbuch basiert auf tiefen, zentralen Wahrheiten des christlichen Glau
 
 * **Titel:** Der kleine Baum, der wachsen durfte
 * **Untertitel:** Ein christliches Bilder- & Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck
-* **Zielgruppe:** Kinder von 4 bis 9 Jahren (und deren Begleitpersonen)
+* **Zielgruppe:** Kinder von 4 bis 99 Jahren (und alle, die im Herzen Kind geblieben sind)
 * **ISBN:** 978-3-9525285-5-6 (Schweizerische Eidgenossenschaft / Nationalbibliothek Bern)
 * **Sprache:** Deutsch
 * **Erscheinungsjahr:** 2026
