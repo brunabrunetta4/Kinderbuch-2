@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>epubli Hardcover Umschlag – Der kleine Baum, der wachsen durfte</title>
+  <style>
+    @page {
+      size: 615mm 216mm;
+      margin: 0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Georgia', 'Palatino', serif;
+      background: #e8e0d5;
+      color: #3a2e25;
+      display: flex;
+      justify-content: center;
+      padding: 15mm;
+    }
+    .cover-wrap {
+      width: 615mm;
+      height: 216mm;
+      background: #fdfaf5;
+      display: grid;
+      grid-template-columns: 297mm 21mm 297mm;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+      border: 1px solid #d8c7b2;
+    }
+
+    /* RÜCKSEITE (LINKS) */
+    .back-cover {
+      padding: 18mm 22mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px dashed #d8c7b2;
+      background: #faf6ef;
+    }
+    .blurb h2 {
+      font-size: 20pt;
+      color: #2c6e49;
+      margin: 0 0 6mm;
+      line-height: 1.25;
+    }
+    .blurb p {
+      font-size: 11.5pt;
+      line-height: 1.6;
+      margin: 0 0 4mm;
+      color: #3d3228;
+    }
+    .quote-box {
+      background: #eff7f2;
+      border-left: 4px solid #2c6e49;
+      padding: 4mm 6mm;
+      margin: 4mm 0 6mm;
+      font-style: italic;
+      font-size: 11.5pt;
+      color: #1b4d32;
+      border-radius: 0 6px 6px 0;
+      line-height: 1.5;
+    }
+    .back-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 8mm;
+      margin-top: 4mm;
+      border-top: 1px solid #e5d8c7;
+      padding-top: 5mm;
+    }
+    .author-mini {
+      display: flex;
+      align-items: center;
+      gap: 5mm;
+    }
+    .author-mini img {
+      width: 28mm;
+      height: 35mm;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #d8c7b2;
+      flex-shrink: 0;
+    }
+    .author-mini-text {
+      font-size: 9.5pt;
+      color: #5c4b3c;
+      max-width: 145mm;
+      line-height: 1.45;
+    }
+    .isbn-box {
+      background: #fff;
+      border: 1px solid #3a2e25;
+      padding: 3mm 5mm;
+      text-align: center;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 9.5pt;
+      font-weight: bold;
+      color: #2d3748;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    /* BUCHRÜCKEN (MITTE) */
+    .spine {
+      background: #2c6e49;
+      color: #fdf8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 10pt;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      text-align: center;
+      padding: 10mm 0;
+    }
+
+    /* VORDERSEITE (RECHTS) */
+    .front-cover {
+      padding: 14mm 18mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      background: linear-gradient(180deg, #fdfbf7 0%, #f6efe4 100%);
+    }
+    .front-header h1 {
+      font-size: 28pt;
+      color: #2c6e49;
+      margin: 0 0 2.5mm;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+    .front-header p {
+      font-size: 12.5pt;
+      color: #b87d28;
+      font-style: italic;
+      margin: 0;
+      line-height: 1.35;
+    }
+    .front-image-wrap {
+      width: 100%;
+      height: 128mm;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid #b87d28;
+      box-shadow: 0 6px 20px rgba(44,110,73,0.18);
+      margin: 3mm 0;
+    }
+    .front-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .front-author {
+      font-size: 15pt;
+      font-weight: bold;
+      color: #3a2e25;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen {
+      body {
+        overflow-x: auto;
+      }
+      .cover-wrap {
+        zoom: 0.45;
+      }
+    }
+    @media print {
+      body { background: none; padding: 0; }
+      .cover-wrap { box-shadow: none; border: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cover-wrap">
+    <!-- RÜCKSEITE -->
+    <div class="back-cover">
+      <div class="blurb">
+        <h2>Wenn der Sturm im Herzen zu laut wird …</h2>
+        <p>Der kleine Apfelbaum Bo möchte alles richtig machen. Er glaubt, er müsse sich ganz furchtbar anstrengen, schnell wachsen und stark sein wie die riesigen Eichen, um geliebt zu werden.</p>
+        <p>Als ein gewaltiger Sturm über das Flusstal fegt, kämpft Bo verbissen gegen den peitschenden Wind – bis ein Ast schmerzhaft anknackst und seine Kräfte versiegen.</p>
+        <div class="quote-box">
+          „Mein geliebtes Kind. Warum kämpfst du so schwer? Du musst dich nicht anstrengen. Du musst den Sturm nicht besiegen. Du bist am lebendigen Wasser gepflanzt. Ruh dich einfach aus und lass dich wärmen.“
+        </div>
+        <p>Ein berührendes christliches Bilderbuch über bedingungslose Gnade, Vertrauen und das Loslassen von Leistungsdruck. Mit 4 psychologisch fundierten Wurzel-Ritualen zum Entspannen und geborgenen Einschlafen.</p>
+      </div>
+
+      <div class="back-bottom">
+        <div class="author-mini">
+          <img src="images/autorin_bruna.jpg" alt="Mirjam Christina Gjergjaj">
+          <div class="author-mini-text">
+            <strong>Mirjam Christina Gjergjaj</strong> schreibt Geschichten, die Kinderherzen stärken und tiefen Trost schenken – besonders dann, wenn das Leben stürmisch wird.
+          </div>
+        </div>
+        <div class="isbn-box">
+          ISBN 978-3-9525285-5-6
+        </div>
+      </div>
+    </div>
+
+    <!-- BUCHRÜCKEN -->
+    <div class="spine">
+      Der kleine Baum, der wachsen durfte &nbsp;•&nbsp; Mirjam Christina Gjergjaj &nbsp;•&nbsp; ISBN 978-3-9525285-5-6
+    </div>
+
+    <!-- VORDERSEITE -->
+    <div class="front-cover">
+      <div class="front-header">
+        <h1>Der kleine Baum, der wachsen durfte</h1>
+        <p>Ein christliches Bilder- &amp; Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck • Für Kinder von 4–9 Jahren</p>
+      </div>
+
+      <div class="front-image-wrap">
+        <img src="images/cover.jpg" alt="Cover: Bo am glitzernden Bachlauf" class="front-image">
+      </div>
+
+      <div class="front-author">Mirjam Christina Gjergjaj</div>
+    </div>
+  </div>
+
+</body>
+</html>

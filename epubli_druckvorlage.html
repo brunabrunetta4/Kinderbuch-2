@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Der kleine Baum, der wachsen durfte – epubli Druckvorlage (A4 Querformat)</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 14mm;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Georgia', 'Palatino', serif;
+      color: #3a2e25;
+      background: #fff;
+      line-height: 1.55;
+    }
+    .sheet {
+      width: 100%;
+      min-height: 178mm;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6mm;
+    }
+    .sheet:last-child {
+      page-break-after: auto;
+    }
+
+    /* Titelseite */
+    .title-page {
+      text-align: center;
+      background: #fdfaf5;
+      border: 1px solid #eadbc8;
+      border-radius: 12px;
+      padding: 22mm 20mm;
+    }
+    .title-page .badge {
+      display: inline-block;
+      background: #eaf4ed;
+      color: #2c6e49;
+      font-size: 11pt;
+      font-weight: bold;
+      padding: 2mm 6mm;
+      border-radius: 20px;
+      margin-bottom: 6mm;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .title-page h1 {
+      font-size: 30pt;
+      color: #2c6e49;
+      margin: 0 0 4mm;
+      line-height: 1.2;
+    }
+    .title-page .subtitle {
+      font-size: 15pt;
+      color: #b87d28;
+      font-style: italic;
+      margin-bottom: 16mm;
+      line-height: 1.4;
+    }
+    .title-page .author {
+      font-size: 16pt;
+      font-weight: bold;
+      color: #3a2e25;
+      letter-spacing: 0.04em;
+    }
+    .title-page .isbn {
+      font-size: 10pt;
+      color: #7a6858;
+      margin-top: 4mm;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* Impressum */
+    .impressum {
+      font-size: 10pt;
+      max-width: 190mm;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .impressum h2 {
+      font-size: 16pt;
+      color: #2c6e49;
+      border-bottom: 1px solid #eadbc8;
+      padding-bottom: 3mm;
+      margin-bottom: 6mm;
+    }
+
+    /* Buchseiten mit Bild & Text */
+    .story-spread {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 10mm;
+      align-items: center;
+    }
+    .story-spread img {
+      width: 100%;
+      max-height: 155mm;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #eadbc8;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .story-text h2 {
+      font-size: 17pt;
+      color: #2c6e49;
+      margin: 0 0 3.5mm;
+      line-height: 1.25;
+    }
+    .story-text .page-num {
+      font-family: system-ui, sans-serif;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #b87d28;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 2mm;
+    }
+    .story-text p {
+      font-size: 11pt;
+      margin: 0 0 3.5mm;
+      line-height: 1.55;
+    }
+    .bible-verse {
+      margin-top: 4mm;
+      padding-left: 4mm;
+      border-left: 3px solid #b87d28;
+      color: #6b5a4b;
+      font-style: italic;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+
+    /* Nur-Text Doppelseiten / Kapitel */
+    .text-sheet {
+      max-width: 210mm;
+      margin: 0 auto;
+    }
+    .text-sheet h2 {
+      font-size: 20pt;
+      color: #2c6e49;
+      margin: 0 0 4mm;
+    }
+    .text-sheet p {
+      font-size: 12pt;
+      line-height: 1.65;
+      margin: 0 0 4mm;
+    }
+
+    /* Info / Gebet / Rituale / Autorin */
+    .info-box {
+      background: #fdfaf5;
+      border: 1px solid #eadbc8;
+      border-radius: 12px;
+      padding: 10mm 14mm;
+      max-width: 250mm;
+      margin: 0 auto;
+    }
+    .info-box h2 {
+      margin-top: 0;
+      color: #2c6e49;
+      font-size: 16pt;
+    }
+    .ritual-item {
+      margin-bottom: 5mm;
+    }
+    .ritual-item h3 {
+      font-size: 12.5pt;
+      color: #2c6e49;
+      margin: 0 0 2mm;
+    }
+    .science-box {
+      background: #fff;
+      border-left: 3px solid #2c6e49;
+      padding: 2.5mm 4mm;
+      margin-top: 2mm;
+      font-size: 9.5pt;
+      color: #4a3e2a;
+      line-height: 1.45;
+      border-radius: 0 6px 6px 0;
+    }
+    .science-badge {
+      font-weight: bold;
+      color: #2c6e49;
+      display: inline-block;
+      margin-right: 2mm;
+    }
+
+    /* Autorin & Werbung */
+    .author-grid {
+      display: grid;
+      grid-template-columns: 60mm 1fr;
+      gap: 10mm;
+      align-items: center;
+    }
+    .author-photo {
+      width: 60mm;
+      height: 75mm;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #eadbc8;
+    }
+    .promo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5mm;
+      margin-top: 4mm;
+    }
+    .promo-item {
+      background: #fff;
+      border: 1px solid #eadbc8;
+      border-radius: 8px;
+      padding: 3.5mm 4.5mm;
+      display: flex;
+      gap: 4mm;
+      align-items: center;
+    }
+    .promo-item img {
+      width: 24mm;
+      height: 32mm;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #eadbc8;
+      flex-shrink: 0;
+    }
+    .promo-item h3 {
+      margin: 0 0 1.5mm;
+      font-size: 11pt;
+      color: #2c6e49;
+    }
+    .promo-item p {
+      margin: 0;
+      font-size: 9pt;
+      color: #6b5a4b;
+      line-height: 1.4;
+    }
+
+    /* Bibel-Tabelle */
+    .bible-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin-top: 3mm;
+    }
+    .bible-table th, .bible-table td {
+      border: 1px solid #e0d8cc;
+      padding: 2.5mm 4mm;
+      text-align: left;
+    }
+    .bible-table th {
+      background: #f5ebe0;
+      color: #2c6e49;
+      font-weight: bold;
+    }
+
+    @media screen {
+      body { background: #e8e0d5; padding: 10mm; }
+      .sheet {
+        background: #fff;
+        max-width: 297mm;
+        margin: 0 auto 10mm;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+    }
+    @media print {
+      body { background: none; padding: 0; }
+      .sheet { box-shadow: none; border: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TITELSEITE -->
+  <section class="sheet">
+    <div class="title-page">
+      <div class="badge">Christliches Bilder- &amp; Trostbuch</div>
+      <h1>Der kleine Baum, der wachsen durfte</h1>
+      <div class="subtitle">Über Gnade, Vertrauen und das Loslassen von Leistungsdruck • Für Kinder von 4–9 Jahren</div>
+      <div class="author">Mirjam Christina Gjergjaj</div>
+      <div class="isbn">ISBN 978-3-9525285-5-6</div>
+    </div>
+  </section>
+
+  <!-- 2. IMPRESSUM -->
+  <section class="sheet">
+    <div class="impressum">
+      <h2>Impressum</h2>
+      <p><strong>Der kleine Baum, der wachsen durfte</strong><br>
+      Ein christliches Bilder- &amp; Trostbuch über Gnade, Vertrauen und das Loslassen von Leistungsdruck<br>
+      1. Auflage 2026 (Schweizer Erstausgabe)</p>
+      
+      <p>© 2026 Mirjam Christina Gjergjaj<br>
+      Alle Rechte vorbehalten.</p>
+
+      <p><strong>Autorin &amp; Gestaltung:</strong> Mirjam Christina Gjergjaj<br>
+      <strong>ISBN:</strong> 978-3-9525285-5-6<br>
+      Bibliografische Information der Schweizerischen Nationalbibliothek (Bern)</p>
+
+      <p><strong>Druck &amp; Distribution:</strong><br>
+      epubli – ein Service der neopubli GmbH, Köpenicker Straße 154a, 10997 Berlin</p>
+
+      <p style="margin-top: 5mm; font-style: italic; color: #7a6858;">
+        Hinweis: Bibelverse sind der Lutherbibel, Zürcher Bibel und Elberfelder Bibel entnommen. Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. GELEIT & WIDMUNG -->
+  <section class="sheet">
+    <div class="text-sheet">
+      <h2>Bibelverse als Geleit</h2>
+      <div class="bible-verse" style="margin-bottom: 6mm; font-size: 11pt;">
+        „Noch ehe ich dich im Mutterleib bildete, habe ich dich gekannt; und ehe du geboren wurdest, habe ich dich geheiligt.“ (Jeremia 1,5)<br><br>
+        „Gesegnet ist, wer auf den Herrn vertraut. Er ist wie ein Baum, am Wasser gepflanzt, der seine Wurzeln zum Bach hin streckt. Er fürchtet sich nicht, wenn die Hitze kommt; seine Blätter bleiben grün. Auch in einem dürren Jahr sorgt er sich nicht.“ (Jeremia 17,7–8 / Psalm 1,3)
+      </div>
+
+      <h2 style="font-size: 16pt; margin-top: 6mm;">Widmung</h2>
+      <p style="font-style: italic; color: #4a3e2a;">
+        Für dich.<br>
+        Du musst die Welt heute nicht tragen.<br>
+        Gott hat dich schon gekannt und geliebt, als du noch winzig klein warst.<br>
+        Du musst dir Seine Liebe nicht verdienen.<br>
+        Atme ein. Atme aus. Du bist in Seinen guten Händen geborgen.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. KAPITEL 1 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene1_bach.jpg" alt="Szene 1: Bo am Ufer des Baches">
+      <div class="story-text">
+        <span class="page-num">Kapitel 1</span>
+        <h2>Am Ufer des Lebenswassers</h2>
+        <p>Es war einmal ein sonniger Hügel, an dessen Fuße ein kleiner, glasklarer Bach entlangmurmelte. Direkt an seinem Ufer, wo das Moos weich wie Samt war, stand Bo.</p>
+        <p>Bo war ein junges Bäumchen. Seine Rinde war glatt und zartbraun, und seine Zweige reckten sich neugierig in den Himmel wie kleine Hände beim Gebet. Seine starken Wurzeln reichten bis tief in das kühle Bachwasser hinein.</p>
+        <p>Der Gärtner selbst hatte ihn hierher gebracht. Er kniete oft ganz nah bei Bo im weichen Gras, strich über die kleinen Wildblumen am Ufer und sah Bo mit Augen voller Liebe und Geduld an.</p>
+        <p>Doch Bo schaute immer öfter zu den riesigen, uralten Eichen hinüber: <em>„Ich muss schnell groß werden! Ich muss stark, gerade und fehlerlos sein. Nur dann hat der Gärtner Freude an mir.“</em></p>
+        <div class="bible-verse">„Er ist wie ein Baum, gepflanzt an den Wasserbächen, der seine Frucht bringt zu seiner Zeit.“ (Psalm 1,3)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. KAPITEL 2 & 3 -->
+  <section class="sheet">
+    <div class="text-sheet">
+      <span class="page-num" style="font-family: system-ui; font-size: 8.5pt; color: #b87d28; font-weight: bold; text-transform: uppercase;">Kapitel 2 &amp; 3</span>
+      <h2>Die große Mühe &amp; Dunkle Wolken</h2>
+      <p>Von diesem Tag an begann Bo, sich ganz schrecklich anzustrengen. Sobald der Morgen graute, spannte er all seine feinen Äste an. Er presste seine Fasern zusammen und drückte mit aller Gewalt: <em>„Wachse! Streck dich! Höher! Schneller! Härter!“</em></p>
+      <p>Wenn ein Vögelchen auf seinem Zweig singen wollte, dachte Bo gehetzt: <em>„Nicht jetzt! Ich habe keine Zeit zum Ausruhen. Wenn ich klein bleibe, bin ich wertlos.“</em> Bo hatte vergessen, wer er war. Er dachte, er müsse sich die Liebe des Gärtners durch eigene Kraft erarbeiten.</p>
+      <p style="margin-top: 5mm;">Eines Nachmittags verdunkelte sich der Himmel. Ein eisiger Windstoß raste über das Tal. Angst kroch in Bos Inneres: <em>„Wenn der Sturm mich trifft, reißt er mich in Stücke!“</em>, hämmerte es in seinen Gedanken. <em>„Ich werde nicht weichen. Ich werde hart sein wie Diamant. Ich werde den Sturm mit meiner eigenen Kraft besiegen!“</em></p>
+      <div class="bible-verse">„Wer von euch kann durch Sorgen sein Leben auch nur um eine Spanne verlängern?“ (Matthäus 6,27)</div>
+    </div>
+  </section>
+
+  <!-- 6. KAPITEL 4 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene4_sturm.jpg" alt="Szene 4: Bo im peitschenden Sturm">
+      <div class="story-text">
+        <span class="page-num">Kapitel 4</span>
+        <h2>Der Sturm bricht los</h2>
+        <p>Dann brach das Unwetter mit aller Gewalt über den Hügel herein. Blitze zuckten durch die Finsternis, und der Regen goss wie Wasserfälle herab.</p>
+        <p>Der Sturm packte Bos Krone und schrie: <em>„Beug dich nieder, Zwerg!“</em> Aber Bo schrie verbissen zurück: <em>„Niemals! Ich halte stand!“</em></p>
+        <p>Bo verkrampfte jede Faser. Seine Äste wurden hart wie Stahlstangen. Er stemmte sich verbissen gegen jede Böe.</p>
+        <p><em>KNIRSCH!</em> Ein stechender Schmerz durchfuhr Bos Rinde. Ein feiner Ast hielt dem ungeheuren Druck nicht mehr stand – mit einem lauten <em>KNACK</em> brach das Holz an. Tränen aus goldenem Baumharz tropften herab.</p>
+        <div class="bible-verse">„Gott ist unsere Zuflucht und Stärke, eine Hilfe in den großen Nöten.“ (Psalm 46,2)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. KAPITEL 5 -->
+  <section class="sheet">
+    <div class="text-sheet">
+      <span class="page-num" style="font-family: system-ui; font-size: 8.5pt; color: #b87d28; font-weight: bold; text-transform: uppercase;">Kapitel 5</span>
+      <h2>Am Rande der Kraft</h2>
+      <p>Der Sturm dachte nicht daran, aufzuhören. Bos kleiner Stamm vibrierte unkontrolliert vor Erschöpfung. Seine Fasern brannten wie Feuer. Seine zarten Wurzeln krampften sich im Boden zusammen. Er hatte keinen Funken Kraft mehr übrig.</p>
+      <p><em>„Ich schaffe es nicht“</em>, schluchzte Bo in das Heulen des Windes hinein. Eine tiefe, dunkle Verzweiflung legte sich auf sein Herz. <em>„Ich habe gekämpft. Ich habe mein Bestes gegeben. Aber ich bin zu klein. Wenn ich loslasse, zerbreche ich. Der Gärtner wird sich für mich schämen.“</em></p>
+      <p>Der Wind holte tief Luft für eine gigantische Riesenböe. Bo kniff die Augen fest zu. Seine Äste erschlafften vor Kraftlosigkeit.</p>
+      <p><em>„Es tut mir leid...“</em>, hauchte Bo in das Tosen des Sturms. <em>„Gärtner, vergib mir. Ich war nicht gut genug.“</em></p>
+      <div class="bible-verse">„Der Herr ist nahe denen, die zerbrochenen Herzens sind.“ (Psalm 34,19)</div>
+    </div>
+  </section>
+
+  <!-- 8. KAPITEL 6 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene6_gaertner_trost.jpg" alt="Szene 6: Der Gärtner tröstet Bo">
+      <div class="story-text">
+        <span class="page-num">Kapitel 6</span>
+        <h2>Die durchbohrten Hände</h2>
+        <p>Mitten im Tosen des Sturms geschah kein Knacken. Kein Zerbrechen.</p>
+        <p>Sondern Bo spürte plötzlich zwei Hände. Große, unendlich feste und doch unfassbar sanfte Hände, die sich schützend um seinen zitternden Stamm legten. An diesen Händen waren feine Spuren zu sehen – Spuren grenzenloser Hingabe und Liebe.</p>
+        <p>Aus den Händen strömte eine wunderbare, wohlige Wärme bis tief hinein in Bos innerstes Holzmark. Vor ihm kniete der Gärtner im nassen Schlamm. In Seinen Augen lag kein Vorwurf, keine Enttäuschung – nur reine Barmherzigkeit.</p>
+        <div class="bible-verse">„Fürchte dich nicht, denn ich habe dich erlöst; ich habe dich bei deinem Namen gerufen; du bist mein!“ (Jesaja 43,1)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. KAPITEL 7 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene7_samenkorn.jpg" alt="Szene 7: Das goldene Samenkorn">
+      <div class="story-text">
+        <span class="page-num">Kapitel 7</span>
+        <h2>Das Geheimnis des Samenkorns</h2>
+        <p>Der Gärtner beugte sich ganz nah an Bos Krone heran und flüsterte:</p>
+        <p style="font-style: italic; color: #2c6e49; font-weight: bold;">
+          „Mein geliebtes Kind. Warum kämpfst du so schwer? Du musst dich nicht anstrengen. Du musst den Sturm nicht besiegen. Du bist am Wasser gepflanzt. Ruh dich einfach aus und lass dich wärmen.“
+        </p>
+        <p>Große Harztränen liefen über Bos Rinde: <em>„Ich wollte doch stark sein für dich!“</em></p>
+        <p>Da strich der Gärtner zärtlich über den angeknacksten Zweig: <em>„Ach, Bo. Noch ehe du ein Blatt hattest, als du noch ein winziges Samenkorn in meiner Hand warst: <strong>Da habe ich dich schon gekannt und geliebt.</strong> Wachsen ist kein Kampf. Du musst dir meine Liebe nicht verdienen. Du bist mein.“</em></p>
+        <div class="bible-verse">„Schaut die Lilien auf dem Felde an, wie sie wachsen: Sie arbeiten nicht, auch spinnen sie nicht.“ (Matthäus 6,28)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. KAPITEL 8 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene8_wurzeln_wasser.jpg" alt="Szene 8: Wurzeln im lebendigen Wasser">
+      <div class="story-text">
+        <span class="page-num">Kapitel 8</span>
+        <h2>Das lebendige Wasser</h2>
+        <p><em>„Aber was soll ich tun, wenn der Sturm drückt?“</em>, fragte Bo leise.</p>
+        <p>Der Gärtner zeigte zum Ufer: <em>„Schau dir die Gräser an. Wenn der Windstoß kommt, neigen sie sich tief. Sie kämpfen nicht – sie tanzen. Wer starr bleibt, bricht. Wer nachgibt, bleibt heil.“</em></p>
+        <p>Der Gärtner legte Seine Hand auf die Erde: <em>„Und schau unter den Boden: Ich habe dich an diese lebendige Quelle gepflanzt. Deine Wurzeln trinken längst, ganz ohne Mühe. Wenn du dich an mich lehnst, kann kein Sturm dich von mir trennen.“</em></p>
+        <div class="bible-verse">„Wer aber von dem Wasser trinkt, das ich ihm gebe, den wird in Ewigkeit nicht dürsten.“ (Johannes 4,14)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. KAPITEL 9 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene9_tanz_im_wind.jpg" alt="Szene 9: Der Tanz im Wind">
+      <div class="story-text">
+        <span class="page-num">Kapitel 9</span>
+        <h2>Das Wunder des Loslassens</h2>
+        <p>Zum ersten Mal in seinem Leben hörte Bo auf zu kämpfen. Er atmete tief aus. Er ließ die Starrheit in seinen Ästen fallen und lehnte sich vertrauensvoll an die Schulter des Gärtners.</p>
+        <p>Als die nächste Windböe heranraste, hielt Bo nicht mehr dagegen. Er gab nach. Er wiegte sich im Sturm wie ein Tänzer. Seine Blätter flatterten fröhlich im Luftstrom.</p>
+        <p>Der Gärtner breitete Seinen weiten Mantel wie schützende Flügel aus. Der Sturm heulte – aber in Bo war tiefer Friede eingekehrt: <em>Gott hält mich fest. Ich darf einfach sein.</em></p>
+        <div class="bible-verse">„Alle eure Sorge werft auf ihn; denn er sorgt für euch.“ (1. Petrus 5,7)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. KAPITEL 10 -->
+  <section class="sheet">
+    <div class="story-spread">
+      <img src="images/szene10_goldener_morgen.jpg" alt="Szene 10: Der goldene Morgen">
+      <div class="story-text">
+        <span class="page-num">Kapitel 10</span>
+        <h2>Der goldene Morgen</h2>
+        <p>Am nächsten Morgen war der Himmel rein gewaschen. Die Sonne schob sich warm und golden über den Horizont. Auf Bos Blättern funkelten Tautropfen wie Brillanten.</p>
+        <p>Der verletzte Zweig war vom Gärtner mit einem sauberen weißen Leinenband liebevoll verbunden worden. Und tief im Erdreich waren seine Wurzeln noch tiefer in das frische Bachbett gewachsen – nicht durch Krampf, sondern in der Ruhe.</p>
+        <p>Vögel sangen auf seinen Zweigen. Der Gärtner trat lächelnd heran: <em>„Guten Morgen, mein großer Tänzer.“</em> Bo wusste nun: Man wächst nicht durch Kämpfen. Man wächst, indem man sich wärmen lässt.</p>
+        <div class="bible-verse">„Die Güte des Herrn ist's, dass wir nicht gar aus sind; seine Barmherzigkeit ist alle Morgen neu.“ (Klagelieder 3,22-23)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FÜR DICH & GEBET -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Für dich, geliebtes Kind Gottes</h2>
+      <p>Vielleicht hast du manchmal das Gefühl, du müsstest perfekt sein – die besten Noten haben, niemals Angst zeigen oder keine Fehler machen, damit andere dich liebhaben. Wenn so ein Sturm in deinem Herzen tobt, dann denk an die Worte deines himmlischen Gärtners:</p>
+      
+      <p style="font-style: italic; color: #2c6e49; font-weight: bold; padding-left: 4mm; border-left: 3px solid #b87d28;">
+        „Ich habe dich gekannt, noch ehe du geboren wurdest. Du musst dir meine Liebe nicht verdienen. Du bist an meiner Quelle gepflanzt. Ruh dich einfach aus und lass dich wärmen.“
+      </p>
+
+      <div style="background: #fff; border: 1px solid #eadbc8; border-radius: 8px; padding: 4mm 6mm; margin-top: 4mm;">
+        <h3 style="margin: 0 0 2mm; color: #b87d28; font-size: 12pt;">Ein kleines Gute-Nacht-Gebet</h3>
+        <p style="font-style: italic; margin: 0; font-size: 10pt; line-height: 1.5;">
+          „Lieber Gott, mein guter Gärtner, danke, dass du mich schon gekannt hast, als ich noch ein winziges Samenkorn war. Danke, dass ich heute nichts mehr leisten muss. Wenn Sorgen wie ein Sturm in meinem Kopf brausen, hilf mir, mich nicht zu verkrampfen. Ich lege all meine Mühe in deine warmen Hände. Lass meine Wurzeln heute Nacht tief in deine Liebe wachsen. Amen.“
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. DAS WURZEL-RITUAL 1 -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Das Wurzel-Ritual: Geborgen einschlafen (Teil 1)</h2>
+      <p style="font-size: 10pt; margin-bottom: 4mm;">Diese somatischen Übungen helfen deinem Nervensystem nachweislich, vom Stress-Modus in den Ruhezustand zu wechseln:</p>
+
+      <div class="ritual-item">
+        <h3>1. Die Zweige entspannen (Progressive Muskelentspannung)</h3>
+        <p style="font-size: 10pt; margin: 0;">Zieh deine Schultern fest zu den Ohren, balle Fäuste wie Bo im Sturm. Zähle leise: <em>1, 2, 3...</em> und dann: <strong>LASS ALLES WEICH FALLEN!</strong> Puste kräftig aus.</p>
+        <div class="science-box">
+          <span class="science-badge">🧠 Im Körper:</span>
+          In deinem Gehirn sitzt eine kleine Alarmanlage (die Amygdala). Nach der kurzen Anspannung schickt dein Körper ein Signal ans Gehirn: <em>„Entwarnung! Der Sturm ist vorbei.“</em> Der Körper schaltet sofort auf Erholung um.
+        </div>
+      </div>
+
+      <div class="ritual-item" style="margin-top: 4mm;">
+        <h3>2. Die Wurzeln der Gnade (Somatische Erdung &amp; Schwerkraft)</h3>
+        <p style="font-size: 10pt; margin: 0;">Spüre deine Beine und Fersen ganz schwer auf der Matratze liegen. Stell dir vor, weiche Wurzeln wachsen tief in Gottes gute Erde. Du kannst nicht fallen.</p>
+        <div class="science-box">
+          <span class="science-badge">🌱 Im Körper:</span>
+          Deine Muskeln haben Schwerkraft-Sensoren. Spürst du den festen Halt der Matratze, stoppt dein Gehirn wirbelnde Gedanken und holt dich ins Hier und Jetzt zurück.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. DAS WURZEL-RITUAL 2 -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Das Wurzel-Ritual: Geborgen einschlafen (Teil 2)</h2>
+
+      <div class="ritual-item">
+        <h3>3. Das Lebenswasser trinken (Der Vagusnerv-Atemzug)</h3>
+        <p style="font-size: 10pt; margin: 0;">Tief durch die Nase einatmen, oben noch einen kleinen Lufthauch nachholen – und dann doppelt so lange sanft durch den Mund ausatmen (wie eine Kerze flackern lassen, ohne sie auszupusten).</p>
+        <div class="science-box">
+          <span class="science-badge">🌊 Im Körper:</span>
+          Langes Ausatmen aktiviert den <strong>Vagusnerv</strong> (deinen Ruhenerv). Er drückt sanft auf die innere Herzbremse: Der Puls sinkt, der Bauch entspannt sich und Stresshormone bauen sich ab.
+        </div>
+      </div>
+
+      <div class="ritual-item" style="margin-top: 4mm;">
+        <h3>4. Die Hand des Gärtners (Kuschelhormon Oxytocin &amp; Co-Regulation)</h3>
+        <p style="font-size: 10pt; margin: 0;">Lege eine Hand ruhig flach auf die Mitte deiner Brust, wo dein Herz schlägt. Spüre die Wärme und den sanften Rhythmus deines Atems.</p>
+        <div class="science-box">
+          <span class="science-badge">❤️ Im Körper:</span>
+          Sanfte Berührung an der Brust schüttet das Bindungshormon <strong>Oxytocin</strong> aus. Es fühlt sich an wie eine warme Decke von innen und schenkt vollkommenen Herzensfrieden.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. SCHATZKISTE DER BIBEL -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Wo die Geschichte in der Bibel wohnt</h2>
+      <p style="font-size: 9.5pt; margin-bottom: 2mm;">Die biblischen Fundamente hinter den Bildern der Geschichte:</p>
+      <table class="bible-table">
+        <thead>
+          <tr>
+            <th>Thema</th>
+            <th>Bibelstelle</th>
+            <th>Kernaussage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Das Samenkorn</strong></td>
+            <td>Jeremia 1,5 / Psalm 139</td>
+            <td>Gott kannte und liebte dich vor aller eigenen Leistung.</td>
+          </tr>
+          <tr>
+            <td><strong>Gepflanzt am Wasser</strong></td>
+            <td>Jeremia 17,7–8 / Psalm 1</td>
+            <td>Wer am lebendigen Wasser wurzelt, fürchtet weder Dürre noch Sturm.</td>
+          </tr>
+          <tr>
+            <td><strong>Der liebende Gärtner</strong></td>
+            <td>Johannes 15,1 / Jesaja 5</td>
+            <td>Gott ist der Weingärtner, der behütet, heilt und pflegt.</td>
+          </tr>
+          <tr>
+            <td><strong>Lilien auf dem Felde</strong></td>
+            <td>Matthäus 6,25–34</td>
+            <td>Wachstum ist ein Geschenk der Gnade, kein krampfhafter Eigenbau.</td>
+          </tr>
+          <tr>
+            <td><strong>Getragen in Seiner Hand</strong></td>
+            <td>Jesaja 43,1 / Johannes 10</td>
+            <td>„Fürchte dich nicht, ich habe dich bei deinem Namen gerufen; du bist mein!“</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 17. ÜBER DIE AUTORIN -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Über die Autorin</h2>
+      <div class="author-grid">
+        <img src="images/autorin_bruna.jpg" alt="Mirjam Christina Gjergjaj" class="author-photo">
+        <div>
+          <p style="font-size: 11pt; line-height: 1.6; margin: 0 0 3mm;">
+            <strong>Mirjam Christina Gjergjaj</strong> schreibt Geschichten, die Kinderherzen stärken und tiefen Trost schenken – besonders dann, wenn das Leben stürmisch wird.
+          </p>
+          <p style="font-size: 10.5pt; line-height: 1.6; margin: 0 0 3mm; color: #4a3e2a;">
+            Mit <em>„Der kleine Baum, der wachsen durfte“</em> schenkt sie Kindern und Familien eine einfühlsame Botschaft gegen Leistungsdruck und Überforderung: Du musst deinen Wert nicht beweisen, denn du bist längst am lebendigen Wasser gepflanzt.
+          </p>
+          <p style="font-size: 10pt; line-height: 1.5; margin: 0; color: #6b5a4b;">
+            Ihre eigenen Erfahrungen von Heilung und Gottes treuer Führung fließen spürbar in jedes ihrer Werke ein.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18. WEITERE BÜCHER & ANGEBOTE -->
+  <section class="sheet">
+    <div class="info-box">
+      <h2>Weitere Bücher &amp; Angebote von Mirjam Christina Gjergjaj</h2>
+      <div class="promo-grid">
+        <div class="promo-item">
+          <img src="images/promo_wachhund.png" alt="Der kleine Wachhund im Kopf">
+          <div>
+            <h3>Der kleine Wachhund im Kopf</h3>
+            <p>Ein Bilderbuch über die Amygdala (3–6 Jahre). Wie Kinder ihren inneren Wachhund bei Angst liebevoll beruhigen können.<br><strong>ISBN: 978-3-9525285-4-9</strong></p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <img src="images/promo_bruna.jpg" alt="Bruna und das tapfere Mädchen">
+          <div>
+            <h3>Bruna und das tapfere Mädchen</h3>
+            <p>Die einfühlsame Geschichte über Mirjams Ankunft auf dem Sonnenhof und ihre Freundschaft zur sanften Hündin Bruna – zum Selberlesen und Vorlesen.</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <img src="images/promo_mein_leben.jpg" alt="Mein Leben – Vom Schatten ins Licht">
+          <div>
+            <h3>Mein Leben – Vom Schatten ins Licht</h3>
+            <p>Ein persönliches, ermutigendes Buch über Glauben, Hoffnung und das Weitergehen mitten im Sturm des Lebens.</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <img src="images/promo_kurs.jpg" alt="Begleitender Kurs">
+          <div>
+            <h3>Begleitender Kurs</h3>
+            <p>Vertiefende Impulse und praktische Übungen für Eltern und Familien rund um innere Ruhe, Vertrauen und Heilung.<br><strong>Mehr dazu auf:</strong> www.ruhe-im-sturm.ch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
