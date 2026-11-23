@@ -385,15 +385,30 @@
 <body>
 
   <!-- EPULBLI NAVIGATION BAR -->
-  <div class="epubli-nav-bar" style="background: #2c6e49; color: white; padding: 12px 20px; border-radius: 12px; max-width: 860px; margin: 15px auto 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; font-family: system-ui, -apple-system, sans-serif; font-size: 0.92rem; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
-    <div style="font-weight: bold; display: flex; align-items: center; gap: 8px;">
-      <span>📚 epubli Druck- &amp; Ansichts-Zentrale:</span>
+  <div class="epubli-nav-bar" style="background: #1e6091; color: white; padding: 14px 20px; border-radius: 14px; max-width: 860px; margin: 15px auto 0; font-family: system-ui, -apple-system, sans-serif; font-size: 0.92rem; box-shadow: 0 4px 18px rgba(0,0,0,0.18);">
+    <div style="font-weight: bold; font-size: 1rem; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
+      <span>📚 epubli Druck- &amp; Ansichts-Zentrale</span>
+      <span style="font-size: 0.8rem; background: #b87d28; padding: 2px 8px; border-radius: 10px;">Neu: 17 × 24 cm Hochformat</span>
     </div>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-      <a href="epubli_cover.html" target="_blank" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">📕 Hardcover Umschlag</a>
-      <a href="epubli_druckvorlage.html" target="_blank" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600; transition: background 0.2s;">📄 Buchblock (18 S.)</a>
-      <a href="epubli_hardcover_umschlag.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600;">📥 Umschlag PDF</a>
-      <a href="epubli_buchblock_inhalt.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-weight: 600;">📥 Buchblock PDF</a>
+    
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <!-- 17x24 cm Hochformat (Empfehlung) -->
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: rgba(255,255,255,0.12); padding: 8px 12px; border-radius: 8px;">
+        <span style="font-weight: 600; color: #fdfaf5;">⭐ 17 × 24 cm (Hochformat):</span>
+        <a href="epubli_druckvorlage_17x24.html" target="_blank" style="background: white; color: #1e6091; text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600;">📄 Buchblock Vorlage</a>
+        <a href="epubli_cover_17x24.html" target="_blank" style="background: white; color: #1e6091; text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600;">📕 Hardcover Umschlag</a>
+        <a href="epubli_buchblock_17x24.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600;">📥 Buchblock PDF</a>
+        <a href="epubli_hardcover_17x24.pdf" target="_blank" style="background: #b87d28; color: white; text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600;">📥 Umschlag PDF</a>
+      </div>
+
+      <!-- A4 Querformat (Bisher) -->
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: rgba(0,0,0,0.15); padding: 6px 12px; border-radius: 8px; font-size: 0.85rem;">
+        <span style="color: #e0d8cc;">↔️ A4 Querformat:</span>
+        <a href="epubli_druckvorlage.html" target="_blank" style="color: #fff; text-decoration: underline;">Buchblock Vorlage</a>
+        <a href="epubli_cover.html" target="_blank" style="color: #fff; text-decoration: underline;">Umschlag</a>
+        <a href="epubli_buchblock_inhalt.pdf" target="_blank" style="color: #f7d08a; text-decoration: underline;">Buchblock PDF</a>
+        <a href="epubli_hardcover_umschlag.pdf" target="_blank" style="color: #f7d08a; text-decoration: underline;">Umschlag PDF</a>
+      </div>
     </div>
   </div>
 

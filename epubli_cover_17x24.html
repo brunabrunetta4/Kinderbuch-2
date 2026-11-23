@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>epubli Hardcover Umschlag (17 x 24 cm) – Der kleine Baum, der wachsen durfte</title>
+  <style>
+    @page {
+      size: 385mm 276mm;
+      margin: 0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Georgia', 'Palatino', serif;
+      background: #e4ddd4;
+      color: #332b24;
+      display: flex;
+      justify-content: center;
+      padding: 15mm;
+    }
+
+    /* Floating Navigation */
+    .floating-nav {
+      position: fixed;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e6091;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      z-index: 9999;
+      display: flex;
+      gap: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      align-items: center;
+    }
+    .floating-nav a {
+      color: white;
+      text-decoration: underline;
+    }
+    .floating-nav .btn-pdf {
+      background: #b87d28;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Cover Wrapper (Gesamtbreite 385mm x 276mm) */
+    .cover-wrap {
+      width: 385mm;
+      height: 276mm;
+      background: #faf7f2;
+      display: grid;
+      grid-template-columns: 188mm 9mm 188mm;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.22);
+      border: 1px solid #d4c4b2;
+    }
+
+    /* 1. RÜCKSEITE (LINKS: 188mm) */
+    .back-cover {
+      padding: 22mm 18mm 22mm 24mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fbf7f0;
+      border-right: 1px dashed #d8c7b2;
+      position: relative;
+    }
+    .blurb h2 {
+      font-size: 16pt;
+      color: #1e6091;
+      margin: 0 0 4mm;
+      line-height: 1.25;
+      font-weight: bold;
+    }
+    .blurb p {
+      font-size: 9.8pt;
+      line-height: 1.55;
+      margin: 0 0 3mm;
+      color: #382d23;
+    }
+    .quote-box {
+      background: #f0f6fa;
+      border-left: 3.5px solid #1e6091;
+      padding: 3.5mm 5mm;
+      margin: 3.5mm 0 4mm;
+      font-style: italic;
+      font-size: 9.5pt;
+      color: #164666;
+      border-radius: 0 5px 5px 0;
+      line-height: 1.48;
+    }
+    .back-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 5mm;
+      margin-top: 4mm;
+      border-top: 1px solid #e8dbcc;
+      padding-top: 4mm;
+    }
+    .author-mini {
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+    }
+    .author-mini img {
+      width: 25mm;
+      height: 32mm;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #1e6091;
+      flex-shrink: 0;
+    }
+    .author-mini-text {
+      font-size: 8.4pt;
+      color: #554436;
+      max-width: 95mm;
+      line-height: 1.42;
+    }
+    .isbn-box {
+      background: #fff;
+      border: 1px solid #332b24;
+      padding: 2.5mm 4mm;
+      text-align: center;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 8.5pt;
+      font-weight: bold;
+      color: #2b3542;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    /* 2. BUCHRÜCKEN (MITTE: 9mm) */
+    .spine {
+      background: #1e6091;
+      color: #fdf8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 8.5pt;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      text-align: center;
+      padding: 15mm 0;
+    }
+
+    /* 3. VORDERSEITE (RECHTS: 188mm) */
+    .front-cover {
+      padding: 20mm 24mm 20mm 18mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      background: radial-gradient(circle at center, #ffffff 0%, #fbf8f2 100%);
+      position: relative;
+    }
+    .front-header h1 {
+      font-size: 21pt;
+      color: #1e6091;
+      margin: 0 0 2mm;
+      line-height: 1.22;
+      font-weight: bold;
+    }
+    .front-header .subtitle {
+      font-size: 10.5pt;
+      color: #b87d28;
+      font-style: italic;
+      margin: 0 0 2mm;
+      line-height: 1.35;
+    }
+    .front-header .target-age {
+      font-family: system-ui, sans-serif;
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: #2c6e49;
+      background: #edf7f1;
+      display: inline-block;
+      padding: 1mm 3.5mm;
+      border-radius: 12px;
+      margin-top: 1mm;
+      letter-spacing: 0.05em;
+    }
+    .front-image-wrap {
+      width: 100%;
+      height: 108mm;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 3.5mm solid #1e6091;
+      box-shadow: 0 8px 24px rgba(30, 96, 145, 0.28);
+      margin: 3mm 0;
+    }
+    .front-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .front-author {
+      font-size: 13pt;
+      font-weight: bold;
+      color: #332b24;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen {
+      body { overflow-x: auto; }
+      .cover-wrap { zoom: 0.55; }
+    }
+    @media print {
+      .floating-nav { display: none !important; }
+      body { background: none; padding: 0; }
+      .cover-wrap { box-shadow: none; border: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FLOATING NAVIGATION -->
+  <div class="floating-nav">
+    <strong>📕 17 × 24 cm Hardcover Umschlag</strong>
+    <a href="index.html">📖 Buch-Webseite</a>
+    <a href="epubli_druckvorlage_17x24.html">📘 Buchblock (17x24 cm)</a>
+    <a href="epubli_cover.html">↔️ A4 Querformat Cover</a>
+    <a href="epubli_hardcover_17x24.pdf" target="_blank" class="btn-pdf">📥 Umschlag 17x24 PDF</a>
+  </div>
+
+  <div class="cover-wrap">
+    <!-- RÜCKSEITE -->
+    <div class="back-cover">
+      <div class="blurb">
+        <h2>Wenn der Sturm im Herzen zu laut wird …</h2>
+        <p>Der kleine Apfelbaum Bo möchte alles richtig machen. Er glaubt, er müsse sich ganz furchtbar anstrengen, schnell wachsen und stark sein wie die riesigen Eichen, um geliebt zu werden.</p>
+        <p>Als ein gewaltiger Sturm über das Flusstal fegt, kämpft Bo verbissen gegen den peitschenden Wind – bis ein Ast schmerzhaft anknackst und seine Kräfte versiegen.</p>
+        <div class="quote-box">
+          „Mein geliebtes Kind. Warum kämpfst du so schwer? Du musst dich nicht anstrengen. Du musst den Sturm nicht besiegen. Du bist am lebendigen Wasser gepflanzt. Ruh dich einfach aus und lass dich wärmen.“
+        </div>
+        <p>Ein berührendes christliches Trostbuch über bedingungslose Gnade, Vertrauen und das Loslassen von Leistungsdruck. Mit 4 psychologisch fundierten Wurzel-Ritualen zum Entspannen und geborgenen Einschlafen.</p>
+      </div>
+
+      <div class="back-bottom">
+        <div class="author-mini">
+          <img src="images/autorin_bruna.jpg" alt="Mirjam Christina Gjergjaj">
+          <div class="author-mini-text">
+            <strong>Mirjam Christina Gjergjaj</strong> schreibt Geschichten, die Kinder- und Erwachsenenherzen stärken und tiefen Trost schenken.
+          </div>
+        </div>
+        <div class="isbn-box">
+          ISBN 978-3-9525285-5-6
+        </div>
+      </div>
+    </div>
+
+    <!-- BUCHRÜCKEN -->
+    <div class="spine">
+      Der kleine Baum, der wachsen durfte &nbsp;•&nbsp; Mirjam Christina Gjergjaj &nbsp;•&nbsp; ISBN 978-3-9525285-5-6
+    </div>
+
+    <!-- VORDERSEITE -->
+    <div class="front-cover">
+      <div class="front-header">
+        <h1>Der kleine Baum, der wachsen durfte</h1>
+        <div class="subtitle">Über Gnade, Vertrauen und das Loslassen von Leistungsdruck</div>
+        <div class="target-age">Für Kinder von 4 bis 99 Jahren</div>
+      </div>
+
+      <div class="front-image-wrap">
+        <img src="images/cover.jpg" alt="Cover: Bo am glitzernden Bachlauf" class="front-image">
+      </div>
+
+      <div class="front-author">Mirjam Christina Gjergjaj</div>
+    </div>
+  </div>
+
+</body>
+</html>
